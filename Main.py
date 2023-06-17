@@ -1,8 +1,9 @@
 from Bank import Bank
 from Account import Account
 
-# creat user
+# Create User
 account = Account
+
 # Create a Bank
 bank = Bank()
 
@@ -16,11 +17,11 @@ KalaCan_account.deposit(5500)
 KalaCan_account.withdraw(500)
 
 # Check available balance
-print(KalaCan_account.get_balance())
+print("Available Balance:", KalaCan_account.get_balance())
 
 # Transfer amount to another user account
 DolaCan_account = bank.get_account("DolaCan")
-KalaCan_account.transfer(DolaCan_account, 100)
+KalaCan_account.transfer(DolaCan_account, 1000)
 
 # Check transaction history
 print(KalaCan_account.get_transaction_history())
@@ -32,6 +33,9 @@ print(bank.get_total_loan_amount())
 
 # Enable loan feature
 bank.enable_loan_feature()
+
+# Disable loan feature
+# bank.disable_loan_feature()
 
 # Take a loan from the bank
 KalaCan_account.deposit(1000)
