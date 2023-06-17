@@ -8,8 +8,8 @@ class Bank:
         self.total_loan_amount = 0
         self.loan_feature = True
 
-    def create_account(self, name):
-        account = Account(name)
+    def create_account(self, name, email):
+        account = Account(name, email)
         self.accounts.append(account)
 
     def get_account(self, name):

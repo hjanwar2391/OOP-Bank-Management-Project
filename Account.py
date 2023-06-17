@@ -1,6 +1,7 @@
 class Account:
-    def __init__(self, name):
+    def __init__(self, name, email):
         self.name = name
+        self.email = email
         self.balance = 0
         self.transaction_history = []
 

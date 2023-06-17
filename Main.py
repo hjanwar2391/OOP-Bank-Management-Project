@@ -7,13 +7,13 @@ account = Account
 bank = Bank()
 
 # Create user accounts
-bank.create_account("KalaCan")
-bank.create_account("DolaCan")
+bank.create_account("KalaCan", "kalacan@gmail.com")
+bank.create_account("DolaCan", "dolacan@gamil.com")
 
 # Deposit and withdraw amounts
 KalaCan_account = bank.get_account("KalaCan")
-KalaCan_account.deposit(500)
-KalaCan_account.withdraw(200)
+KalaCan_account.deposit(5500)
+KalaCan_account.withdraw(500)
 
 # Check available balance
 print(KalaCan_account.get_balance())
