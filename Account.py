@@ -28,3 +28,10 @@ class Account:
 
     def get_transaction_history(self):
         return self.transaction_history
+
+    def apply_loan(self, user_id):
+        total_amount = self.users[user_id]['balance'] * 2
+        self.users[user_id]['balance'] += total_amount
+        self.users[user_id]['transactions'].append(f"Loan received: {total_amount}")
+ 
+    
